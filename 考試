@@ -1,0 +1,16 @@
+#問題1
+for i in range(5):#重複五次
+    print("*+"*10)#*+順序的符號
+    print("+*"*10)#+*順序的符號
+#問題2
+
+number = int(input(""))#輸入第一列的正數字 n，用來表示報名的隊伍數量，及接下來共有 n 列
+res = 0 #歸零合格隊伍的數量
+
+for i in range(number):#重複n次
+    member = int(input(""))#輸入隊伍人數
+    if member % 3 == 0 and member > 0:#如果隊伍人數除以3的餘數是零
+        res = res + 1#合格隊伍數量+1
+print(res)#輸出合格隊伍人數
+#問題3
+#Markdown是一種輕量級標記式語言，使用易讀易寫的純文字格式編寫文件，然後轉換成有效的XHTML
