@@ -1,0 +1,9 @@
+#問題2
+number = int(input(""))#輸入第一列的正數字 n，用來表示報名的隊伍數量，及接下來共有 n 列
+res = 0 #歸零合格隊伍的數量
+
+for i in range(number):#重複n次
+    member = int(input(""))#輸入隊伍人數
+    if member % 3 == 0 and member > 0:#如果隊伍人數除以3的餘數是零
+        res = res + 1#合格隊伍數量+1
+print(res)#輸出合格隊伍人數
